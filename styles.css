@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    /* Прозорий фон */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    /* Максимальна ширина */
+}
+
+header .logo {
+    height: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* Центрування меню */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.hero-image {
+    margin-top: 0;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.hero-text h1 {
+    font-family: "Sofia", sans-serif ;
+    font-size: 6em;
+    color: #46494c;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.hero-text p {
+    font-family: "Sofia", sans-serif;
+    font-size: 3em;
+    color: #46494c;
+    margin: 0;
+    padding: 0.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.catalog-title{
+    margin-top: 100px;
+
+}
+
+.product {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    flex: 0 0 auto;
+    margin-right: 150px;
+    
+}
+
+.product-info h2 {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.product-info h3 {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.product-info p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    /* Відключає підсвічування посилань */
+    color: inherit;
+    /* Наслідує колір тексту з батьківського елемента */
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    /* Відключає підсвічування при наведенні, фокусі та активному стані */
+}
+
+footer {
+    text-align: center;
+    margin-top: 120px; ;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
